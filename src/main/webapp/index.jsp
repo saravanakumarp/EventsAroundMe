@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html>
 <html>
  <base href="/"/>
@@ -6,8 +8,12 @@
    
      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis">
-      <link href="events/static/css/style.css" rel="stylesheet"></link> 
+      <link href="/static/css/style.css" rel="stylesheet"></link> 
      <script type="text/javascript">
+     <spring:url value="/resources/gradients.css" var="gradientsCss" />
+    	    <spring:url value="/resources/styles.css" var="stylesCss" />
+    	    <spring:url value="/resources/set-background.js" var="setBackgroundJs" />
+    	    <spring:url value="/resources/tweet.svg" var="tweetSvg" />
 //Image Hover
 jQuery(document).ready(function(){
 jQuery(function() {
@@ -20,7 +26,7 @@ jQuery(function() {
      <div class="header-top">
 	<div class="wrap">
         <div class="logo">
-			<a href="index.html"><img src="events/static/images/logo.png" alt=""/></a>
+			<a href="index.html"><img src="/static/images/logo.png" alt=""/></a>
 		</div>
 		<div class="cssmenu">
 		  <nav id="nav" role="navigation">
@@ -50,7 +56,7 @@ jQuery(function() {
      </div>
     </div>
      <div class="map">
-     	<img src="events/static/images/map.jpg" alt=""/>
+     	<img src="/static/images/map.jpg" alt=""/>
      </div>
      <div class="content-box">
      	<div class="wrap">
@@ -71,7 +77,7 @@ jQuery(function() {
 				  <form>
 				    <select id="country" name="country" onchange="change_country(this.value)" class="frm-field required">
 		            <option value="null">Your Location</option>         
-		            <option value="AX">Åland Islands</option>
+		            <option value="AX">Ã…land Islands</option>
 		            <option value="AF">Afghanistan</option>
 		            <option value="AL">Albania</option>
 		            <option value="DZ">Algeria</option>
@@ -282,11 +288,11 @@ jQuery(function() {
      	<div class="wrap">
      		<div class="section group">
 				<div class="col_1_of_3 span_1_of_3">
-					<img src="events/static/images/pic.jpg" alt=""/>
+					<img src="/static/images/pic.jpg" alt=""/>
 					<ul class="m_fb">
 						<li>
-							<span class="m_22"><a href="#"><img src="events/static/images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
-						    <span class="m_23"><a href="#"><img src="events/static/images/heart.png" alt=""/></a></span>
+							<span class="m_22"><a href="#"><img src="/static/images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
+						    <span class="m_23"><a href="#"><img src="/static/images/heart.png" alt=""/></a></span>
 						     <div class="clear"></div>
 						</li>
 					</ul>
@@ -299,19 +305,19 @@ jQuery(function() {
 					   <div class="section group example">
 						<div class="col_1_of_2 span_1_of_2">
 						   <ul>
-							  <li><img src="events/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">13%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
+							  <li><img src="/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">13%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
 						   </ul>
 		 				</div>
 						<div class="col_1_of_2 span_1_of_2">
 						  <ul>
-							 <li><img src="events/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">87%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">87%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
 						  </ul>
 						</div>
 						<div class="clear"></div>
 		    		  </div>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-					<img src="events/static/images/pic1.jpg" alt=""/>
+					<img src="/static/images/pic1.jpg" alt=""/>
 					<ul class="m_fb">
 						<li>
 							<span class="m_24"><a href="#"><img src="images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
@@ -328,23 +334,23 @@ jQuery(function() {
 					   <div class="section group example">
 						<div class="col_1_of_2 span_1_of_2">
 						   <ul>
-							 <li><img src="events/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">25%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">25%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
 						   </ul>
 		 				</div>
 						<div class="col_1_of_2 span_1_of_2">
 						  <ul>
-							 <li><img src="events/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">75%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">75%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
 						  </ul>
 						</div>
 						<div class="clear"></div>
 		    		  </div>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-					<img src="events/static/images/pic2.jpg" alt=""/>
+					<img src="/static/images/pic2.jpg" alt=""/>
 					<ul class="m_fb">
 						<li>
-							<span class="m_22"><a href="#"><img src="events/static/images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
-						    <span class="m_23"><a href="#"><img src="events/static/images/heart.png" alt=""/></a></span>
+							<span class="m_22"><a href="#"><img src="/static/images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
+						    <span class="m_23"><a href="#"><img src="/static/images/heart.png" alt=""/></a></span>
 						     <div class="clear"></div>
 						</li>
 					</ul>
@@ -357,12 +363,12 @@ jQuery(function() {
 					   <div class="section group example">
 						<div class="col_1_of_2 span_1_of_2">
 						   <ul>
-							 <li><img src="events/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">62%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">62%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
 						   </ul>
 		 				</div>
 						<div class="col_1_of_2 span_1_of_2">
 						  <ul>
-							 <li><img src="events/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">38%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">38%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
 						  </ul>
 						</div>
 						<div class="clear"></div>
@@ -372,11 +378,11 @@ jQuery(function() {
 			</div>
 			<div class="section group">
 				<div class="col_1_of_3 span_1_of_3">
-					<img src="events/static/images/pic3.jpg" alt=""/>
+					<img src="/static/images/pic3.jpg" alt=""/>
 					<ul class="m_fb">
 						<li>
-							<span class="m_24"><a href="#"><img src="events/static/images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
-						    <span class="m_23"><a href="#"><img src="events/static/images/heart.png" alt=""/></a></span>
+							<span class="m_24"><a href="#"><img src="/static/images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
+						    <span class="m_23"><a href="#"><img src="/static/images/heart.png" alt=""/></a></span>
 						     <div class="clear"></div>
 						</li>
 					</ul>
@@ -389,19 +395,19 @@ jQuery(function() {
 					   <div class="section group example">
 						<div class="col_1_of_2 span_1_of_2">
 						   <ul>
-							 <li><img src="events/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">55%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">55%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
 						   </ul>
 		 				</div>
 						<div class="col_1_of_2 span_1_of_2">
 						  <ul>
-							 <li><img src="events/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">45%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">45%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
 						  </ul>
 						</div>
 						<div class="clear"></div>
 		    		  </div>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-					<img src="events/static/images/pic4.jpg" alt=""/>
+					<img src="/static/images/pic4.jpg" alt=""/>
 					<ul class="m_fb">
 						<li>
 							<span class="m_22"><a href="#"><img src="images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
@@ -418,23 +424,23 @@ jQuery(function() {
 					   <div class="section group example">
 						<div class="col_1_of_2 span_1_of_2">
 						   <ul>
-							 <li><img src="events/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">31%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">31%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
 						   </ul>
 		 				</div>
 						<div class="col_1_of_2 span_1_of_2">
 						  <ul>
-							 <li><img src="events/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">69%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">69%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
 						  </ul>
 						</div>
 						<div class="clear"></div>
 		    		  </div>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-					<img src="events/static/images/pic5.jpg" alt=""/>
+					<img src="/static/images/pic5.jpg" alt=""/>
 					<ul class="m_fb">
 						<li>
-							<span class="m_24"><a href="#"><img src="events/static/images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
-						    <span class="m_23"><a href="#"><img src="events/static/images/heart.png" alt=""/></a></span>
+							<span class="m_24"><a href="#"><img src="/static/images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
+						    <span class="m_23"><a href="#"><img src="/static/images/heart.png" alt=""/></a></span>
 						     <div class="clear"></div>
 						</li>
 					</ul>
@@ -447,23 +453,23 @@ jQuery(function() {
 					   <div class="section group example">
 						<div class="col_1_of_2 span_1_of_2">
 						   <ul>
-							 <li><img src="events/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">57%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">57%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
 						   </ul>
 		 				</div>
 						<div class="col_1_of_2 span_1_of_2">
 						  <ul>
-							 <li><img src="events/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">43%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">43%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
 						  </ul>
 						</div>
 						<div class="clear"></div>
 		    		  </div>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-					<img src="events/static/images/pic.jpg" alt=""/>
+					<img src="/static/images/pic.jpg" alt=""/>
 					<ul class="m_fb">
 						<li>
-							<span class="m_22"><a href="#"><img src="events/static/images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
-						    <span class="m_23"><a href="#"><img src="events/static/images/heart.png" alt=""/></a></span>
+							<span class="m_22"><a href="#"><img src="/static/images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
+						    <span class="m_23"><a href="#"><img src="/static/images/heart.png" alt=""/></a></span>
 						     <div class="clear"></div>
 						</li>
 					</ul>
@@ -476,19 +482,19 @@ jQuery(function() {
 					   <div class="section group example">
 						<div class="col_1_of_2 span_1_of_2">
 						   <ul>
-							  <li><img src="events/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">13%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
+							  <li><img src="/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">13%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
 						   </ul>
 		 				</div>
 						<div class="col_1_of_2 span_1_of_2">
 						  <ul>
-							 <li><img src="events/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">87%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">87%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
 						  </ul>
 						</div>
 						<div class="clear"></div>
 		    		  </div>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-					<img src="events/static/images/pic1.jpg" alt=""/>
+					<img src="/static/images/pic1.jpg" alt=""/>
 					<ul class="m_fb">
 						<li>
 							<span class="m_24"><a href="#"><img src="images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
@@ -505,23 +511,23 @@ jQuery(function() {
 					   <div class="section group example">
 						<div class="col_1_of_2 span_1_of_2">
 						   <ul>
-							 <li><img src="events/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">25%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">25%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
 						   </ul>
 		 				</div>
 						<div class="col_1_of_2 span_1_of_2">
 						  <ul>
-							 <li><img src="events/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">75%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">75%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
 						  </ul>
 						</div>
 						<div class="clear"></div>
 		    		  </div>
 				</div>
 				<div class="col_1_of_3 span_1_of_3">
-					<img src="events/static/images/pic2.jpg" alt=""/>
+					<img src="/static/images/pic2.jpg" alt=""/>
 					<ul class="m_fb">
 						<li>
-							<span class="m_22"><a href="#"><img src="events/static/images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
-						    <span class="m_23"><a href="#"><img src="events/static/images/heart.png" alt=""/></a></span>
+							<span class="m_22"><a href="#"><img src="/static/images/fb.png" alt=""/></a></span><span class="middle">Aug 17, 2013 02:00pm-08-00pm IST</span>
+						    <span class="m_23"><a href="#"><img src="/static/images/heart.png" alt=""/></a></span>
 						     <div class="clear"></div>
 						</li>
 					</ul>
@@ -534,12 +540,12 @@ jQuery(function() {
 					   <div class="section group example">
 						<div class="col_1_of_2 span_1_of_2">
 						   <ul>
-							 <li><img src="events/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">62%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/men.png" alt=""/><div class="m_desc"><span class="m_2">62%</span><br><span class="m_3">Male</span></div> <div class="clear"></div></li>
 						   </ul>
 		 				</div>
 						<div class="col_1_of_2 span_1_of_2">
 						  <ul>
-							 <li><img src="events/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">38%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
+							 <li><img src="/static/images/women.png" alt=""/><div class="m_desc"><span class="m_2">38%</span><br><span class="m_3">Fe male</span></div> <div class="clear"></div></li>
 						  </ul>
 						</div>
 						<div class="clear"></div>
@@ -582,8 +588,8 @@ jQuery(function() {
        </div>
      </div>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
-      <script src="events/static/js/app.js"></script>
-      <script src="events/static/js/service/user_service.js"></script>
-      <script src="events/static/js/controller/user_controller.js"></script>
+      <script src="/static/js/app.js"></script>
+      <script src="/static/js/service/user_service.js"></script>
+      <script src="/static/js/controller/user_controller.js"></script>
   </body>
 </html>
