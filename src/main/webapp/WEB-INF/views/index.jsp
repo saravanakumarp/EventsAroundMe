@@ -4,12 +4,12 @@
 <html>
  <base href="/"/>
   <head>  
-    <title>EventsAroundMe Around Me</title>  
+    <title>Events Around Me</title>  
    
      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat">
      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Dosis">
-      <link href="/static/css/style.css" rel="stylesheet"></link>
-      <spring:url value="/static/css/style.css" var="style" /> 
+      <link href="EventsAroundMe/static/css/style.css" rel="stylesheet"></link>
+      <spring:url value="EventsAroundMe/static/css/style.css" var="style" /> 
      <script type="text/javascript">
 //Image Hover
 jQuery(document).ready(function(){
@@ -585,8 +585,8 @@ jQuery(function() {
        </div>
      </div>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
-       <spring:url value="/static/js/app.js" var="app" />
-        <spring:url value="/static/js/user_service.js" var="user_service" />
-         <spring:url value="/static/js/user_controller.js" var="user_controller" />
+       <spring:url value="EventsAroundMe/static/js/app.js" var="app" />
+        <spring:url value="EventsAroundMe/static/js/user_service.js" var="user_service" />
+         <spring:url value="EventsAroundMe/static/js/user_controller.js" var="user_controller" />
        </body>
 </html>
